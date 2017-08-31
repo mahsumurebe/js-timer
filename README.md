@@ -1,14 +1,18 @@
 # MXTimer
 Timer Plugin for JavaScript
+
 ## 1\. Installation MXTimer
 
 1.  Download files !
 
 2.  Add the code inside the body tag.
 
-    > ```
-    > <script src="mx-timer.js"></script>
-    > 
+    <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+
+    <pre style="margin: 0; line-height: 125%"><span style="color: #007700">&lt;script</span> <span style="color: #0000CC">src=</span><span style="background-color: #fff0f0">"mx-timer.js"</span><span style="color: #007700">&gt;&lt;/script&gt;</span>
+    </pre>
+
+    </div>
 
 3.  Start coding freely :)
 
@@ -16,59 +20,71 @@ Timer Plugin for JavaScript
 
 1.  Easily create timers.
 
-    > ```
-    > var myTimer = new Timer({
-    >   func: function () {
-    >       console.log('is timer function');
-    >   },
-    >   interval: 1000, // interval 1 second.
-    >   autoStart: true // Automatic start timer.
-    > });
+    <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+
+    <pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">var</span> myTimer <span style="color: #333333">=</span> <span style="color: #008800; font-weight: bold">new</span> Timer({
+        func<span style="color: #333333">:</span> <span style="color: #008800; font-weight: bold">function</span> () {
+            console.log(<span style="background-color: #fff0f0">'is timer function'</span>);
+        },
+        interval<span style="color: #333333">:</span> <span style="color: #0000DD; font-weight: bold">1000</span>, <span style="color: #888888">// interval 1 second.</span>
+        autoStart<span style="color: #333333">:</span> <span style="color: #008800; font-weight: bold">true</span> <span style="color: #888888">// Automatic start timer.</span>
+    });
+    </pre>
+
+    </div>
 
 2.  Define events within options.
 
-    > ```
-    > var myTimer = new Timer({
-    >   func: function () {
-    >       console.log('is timer function');
-    >   },
-    >   interval: 2000, // interval 2 second.
-    >   autoStart: true, // Automatic start timer.
-    >   initializer: function () {
-    >       console.log('On initialize timer.'); // This function calls the timer constructor.
-    >   },
-    >   onafterstart: function () {
-    >       console.log('After start timer.'); // This function is executed every time after the timer runs.
-    >   },
-    >   onstart: function () {
-    >       console.log('Start timer.'); // This function is executed every time the timer runs.
-    >   },
-    >   onafterstop: function () {
-    >       console.log('After stop timer.'); // This function is executed after it has been stopped in time.
-    >   },
-    >   onstop: function () {
-    >       console.log('Stop timer.'); // This function is executed when the timer is stopped.
-    >   },
-    >   callback: function () {
-    >       console.log('Callback timer.'); // Callback function
-    >   }
-    > );
+    <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+
+    <pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">var</span> myTimer <span style="color: #333333">=</span> <span style="color: #008800; font-weight: bold">new</span> Timer({
+        func<span style="color: #333333">:</span> <span style="color: #008800; font-weight: bold">function</span> () {
+            console.log(<span style="background-color: #fff0f0">'is timer function'</span>);
+        },
+        interval<span style="color: #333333">:</span> <span style="color: #0000DD; font-weight: bold">2000</span>, <span style="color: #888888">// interval 2 second.</span>
+        autoStart<span style="color: #333333">:</span> <span style="color: #008800; font-weight: bold">true</span>, <span style="color: #888888">// Automatic start timer.</span>
+        initializer<span style="color: #333333">:</span> <span style="color: #008800; font-weight: bold">function</span> () {
+            console.log(<span style="background-color: #fff0f0">'On initialize timer.'</span>); <span style="color: #888888">// This function calls the timer constructor.</span>
+        },
+        onafterstart<span style="color: #333333">:</span> <span style="color: #008800; font-weight: bold">function</span> () {
+            console.log(<span style="background-color: #fff0f0">'After start timer.'</span>); <span style="color: #888888">// This function is executed every time after the timer runs.</span>
+        },
+        onstart<span style="color: #333333">:</span> <span style="color: #008800; font-weight: bold">function</span> () {
+            console.log(<span style="background-color: #fff0f0">'Start timer.'</span>); <span style="color: #888888">// This function is executed every time the timer runs.</span>
+        },
+        onafterstop<span style="color: #333333">:</span> <span style="color: #008800; font-weight: bold">function</span> () {
+            console.log(<span style="background-color: #fff0f0">'After stop timer.'</span>); <span style="color: #888888">// This function is executed after it has been stopped in time.</span>
+        },
+        onstop<span style="color: #333333">:</span> <span style="color: #008800; font-weight: bold">function</span> () {
+            console.log(<span style="background-color: #fff0f0">'Stop timer.'</span>); <span style="color: #888888">// This function is executed when the timer is stopped.</span>
+        },
+        callback<span style="color: #333333">:</span> <span style="color: #008800; font-weight: bold">function</span> () {
+            console.log(<span style="background-color: #fff0f0">'Callback timer.'</span>); <span style="color: #888888">// Callback function</span>
+        }
+    });
+    </pre>
+
+    </div>
 
 3.  Define events after create timer.
 
-    > ```
-    > var myTimer = new Timer({
-    >     func: function () {
-    >         console.log('is timer function');
-    >     },
-    >     interval: 2000, // interval 2 second.
-    >     autoStart: true, // Automatic start timer.
-    > });
-    > myTimer.on('start', function ($this) {
-    >     console.log('Starting');
-    > }).on('stop', function () {
-    >     console.log('stopping');
-    > });
+    <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+
+    <pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">var</span> myTimer <span style="color: #333333">=</span> <span style="color: #008800; font-weight: bold">new</span> Timer({
+        func<span style="color: #333333">:</span> <span style="color: #008800; font-weight: bold">function</span> () {
+            console.log(<span style="background-color: #fff0f0">'is timer function'</span>);
+        },
+        interval<span style="color: #333333">:</span> <span style="color: #0000DD; font-weight: bold">2000</span>, <span style="color: #888888">// interval 2 second.</span>
+        autoStart<span style="color: #333333">:</span> <span style="color: #008800; font-weight: bold">true</span>, <span style="color: #888888">// Automatic start timer.</span>
+    });
+    myTimer.on(<span style="background-color: #fff0f0">'start'</span>, <span style="color: #008800; font-weight: bold">function</span> ($this) {
+        console.log(<span style="background-color: #fff0f0">'Starting'</span>);
+    }).on(<span style="background-color: #fff0f0">'stop'</span>, <span style="color: #008800; font-weight: bold">function</span> () {
+        console.log(<span style="background-color: #fff0f0">'stopping'</span>);
+    });
+    </pre>
+
+    </div>
 
 ## 3\. Options
 
@@ -333,39 +349,53 @@ Timer Plugin for JavaScript
 </table>
 
 ## 6\. Errors
-<table border="1" width="100%" cellpadding="0" cellspacing="0" id="errors">
-<thead>
-<tr>
-<th>Error</th>
-<th width="100">Class</th>
-<th>Details</th>
-</tr>
-</thead>
-<tbody>
 
+<table border="1" width="100%" cellpadding="0" cellspacing="0" id="errors">
+
+<thead>
+
+<tr>
+
+<th>Error</th>
+
+<th width="100">Class</th>
+
+<th>Details</th>
+
+</tr>
+
+</thead>
+
+<tbody>
 
 <tr>
 
 <td class="title">Invalid argument was sent for adding timer.</td>
+
 <td class="title">TimerInvalidAddArgs</td>
 
 <td>If a value other than object type is entered while adding the timer, you will get this error message. You can get help from the examples above when adding timers.</td>
 
 </tr>
+
 <tr>
 
 <td class="title">Timer function not defined correctly.</td>
+
 <td class="title">TimerIsNotFunction</td>
 
 <td>The timer has to be defined as a function. The reason for encountering this error is to define a real function.</td>
 
 </tr>
+
 <tr>
 
 <td class="title">Invalid Interval value. Interval to be bigger than zero.</td>
+
 <td class="title">TimerInvalidAddArgs</td>
 
 <td>Timer interval must be greater than zero.</td>
+
 </tr>
 
 </tbody>
