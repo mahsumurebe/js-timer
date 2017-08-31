@@ -362,21 +362,6 @@ Timer Plugin for JavaScript
 </tr>
 <tr>
 
-<td class="title">Timer function not defined correctly.</td>
-<td class="title">TimerIsNotFunction</td>
-
-<td>The timer has to be defined as a function. The reason for encountering this error is to define a real function.</td>
-
-</tr>
-<tr>
-
-<td class="title">Invalid Interval value. Interval to be bigger than zero.</td>
-<td class="title">TimerInvalidAddArgs</td>
-
-<td>Timer interval must be greater than zero.</td>
-</tr>
-<tr>
-
 <td class="title">Invalid Interval value. Interval to be bigger than zero.</td>
 <td class="title">TimerInvalidAddArgs</td>
 
