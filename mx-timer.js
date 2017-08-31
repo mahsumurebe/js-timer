@@ -1,10 +1,10 @@
 'use strict'
 function TimerInvalidAddArgs(message) {
-    this.message = message + ' For details: {site_name}/errors/TimerInvalidAddArgs/';
+    this.message = message + ' For details: http://www.github.com/mahsumurebe/js-timer/#errors';
     this.name = 'TimerInvalidAddArgument';
 }
 function TimerIsNotFunction(message) {
-    this.message = message + ' For details: {site_name}/errors/TimerIsNotFunction/';
+    this.message = message + ' For details: http://www.github.com/mahsumurebe/js-timer/#errors';
     this.name = 'TimerIsNotFunction';
 }
 var MXTimer = function () {
@@ -101,7 +101,7 @@ var MXTimer = function () {
         }, opts);
 
         if (!is_function(options.func))
-            throw new TimerIsNotFunction(options.func.toString() + ' is not a function.');
+            throw new TimerIsNotFunction('Timer function not defined correctly.');
         if (options.interval < 1)
             throw new TimerInvalidAddArgs('Invalid Interval value. Interval to be bigger than zero.');
         if (is_undefined(options.group_name)) {
