@@ -331,3 +331,58 @@ Timer Plugin for JavaScript
 </tbody>
 
 </table>
+
+## 6\. Errors
+<table border="1" width="100%" cellpadding="0" cellspacing="0" id="errors">
+<thead>
+<tr>
+<th>Error</th>
+<th width="100">Class</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+
+
+<tr>
+
+<td class="title">Invalid argument was sent for adding timer.</td>
+<td class="title">TimerInvalidAddArgs</td>
+
+<td>If a value other than object type is entered while adding the timer, you will get this error message. You can get help from the examples above when adding timers.</td>
+
+</tr>
+<tr>
+
+<td class="title">Timer function not defined correctly.</td>
+<td class="title">TimerIsNotFunction</td>
+
+<td>The timer has to be defined as a function. The reason for encountering this error is to define a real function.</td>
+
+</tr>
+<tr>
+
+<td class="title">Timer function not defined correctly.</td>
+<td class="title">TimerIsNotFunction</td>
+
+<td>The timer has to be defined as a function. The reason for encountering this error is to define a real function.</td>
+
+</tr>
+<tr>
+
+<td class="title">Invalid Interval value. Interval to be bigger than zero.</td>
+<td class="title">TimerInvalidAddArgs</td>
+
+<td>Timer interval must be greater than zero.</td>
+</tr>
+<tr>
+
+<td class="title">Invalid Interval value. Interval to be bigger than zero.</td>
+<td class="title">TimerInvalidAddArgs</td>
+
+<td>Timer interval must be greater than zero.</td>
+</tr>
+
+</tbody>
+
+</table>
