@@ -1,4 +1,5 @@
 # MXTimer
+
 Timer Plugin for JavaScript
 
 ## 1\. Installation MXTimer
@@ -86,6 +87,7 @@ Timer Plugin for JavaScript
 
     </div>
 
+
 ## 3\. Options
 
 <table border="1" width="100%" cellpadding="0" cellspacing="0">
@@ -140,7 +142,7 @@ Timer Plugin for JavaScript
 
 <td class="title">autoStart</td>
 
-<td class="title">bool</td>
+<td class="title">boolean</td>
 
 <td>Auto start timer.</td>
 
@@ -232,7 +234,17 @@ Timer Plugin for JavaScript
 
 <tr>
 
-<td class="title">getCount</td>
+<td colspan="3" class="title" align="center">
+
+#### Timer
+
+</td>
+
+</tr>
+
+<tr>
+
+<td class="title">Timer.getCount</td>
 
 <td class="title">int</td>
 
@@ -242,7 +254,17 @@ Timer Plugin for JavaScript
 
 <tr>
 
-<td class="title">trigger</td>
+<td class="title">Timer.isStarted</td>
+
+<td class="title">boolean</td>
+
+<td>Timer is started ?</td>
+
+</tr>
+
+<tr>
+
+<td class="title">Timer.trigger</td>
 
 <td class="title">Timer</td>
 
@@ -252,7 +274,7 @@ Timer Plugin for JavaScript
 
 <tr>
 
-<td class="title">on</td>
+<td class="title">Timer.on</td>
 
 <td class="title">Timer</td>
 
@@ -262,7 +284,7 @@ Timer Plugin for JavaScript
 
 <tr>
 
-<td class="title">start</td>
+<td class="title">Timer.start</td>
 
 <td class="title">Timer</td>
 
@@ -272,21 +294,81 @@ Timer Plugin for JavaScript
 
 <tr>
 
-<td class="title">reset</td>
+<td class="title">Timer.reset</td>
 
 <td class="title">Timer</td>
 
-<td>Reset timer. Like myTimer.stop(true).start();</td>
+<td>Reset timer. Like Timer.stop(true).start();</td>
 
 </tr>
 
 <tr>
 
-<td class="title">stop</td>
+<td class="title">Timer.stop</td>
 
 <td class="title">Timer</td>
 
 <td>Stop timer.</td>
+
+</tr>
+
+<tr>
+
+<td colspan="3" class="title" align="center">
+
+#### XMTimer
+
+</td>
+
+</tr>
+
+<tr>
+
+<td class="title">MXTimer.add({/* Options */})</td>
+
+<td class="title">Timer</td>
+
+<td>Adding timer.</td>
+
+</tr>
+
+<tr>
+
+<td class="title">MXTimer.remove(_/** Optional */_'group_name')</td>
+
+<td class="title">MXTimer</td>
+
+<td>Remove timer by group name. Note: If no group name is sent, removes all timers.</td>
+
+</tr>
+
+<tr>
+
+<td class="title">MXTimer.stop(_/** Optional */_'group_name')</td>
+
+<td class="title">Timer</td>
+
+<td>Stop timer by group name. Note: If no group name is sent, stopped all timers.</td>
+
+</tr>
+
+<tr>
+
+<td class="title">MXTimer.getByGroupName('group_name')</td>
+
+<td class="title">Timer</td>
+
+<td>Get timers by group name.</td>
+
+</tr>
+
+<tr>
+
+<td class="title">MXTimer.info(_/** Optional */_'group_name')</td>
+
+<td class="title">Timer</td>
+
+<td>Timer information by group name. Note: If the group name is not sent, it returns information for all timers.</td>
 
 </tr>
 
