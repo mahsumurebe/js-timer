@@ -1,3 +1,16 @@
+/**
+ * MXTimer - Timer Plugin for JavaScript
+ *
+ * The purpose of the plugin is to collect, manage and group
+ * the timers used in a single class. The plugin is free to use.
+ * Distribution and development is only open if it is to be
+ * distributed free of charge.
+ *
+ * For donation: http://www.fb.com/mahsumurebe :)
+ *
+ * @author Mahsum UREBE | https://github.com/mahsumurebe/
+ * @since 2017
+ */
 'use strict'
 /**
  * Argument error catcher.
